@@ -1,0 +1,182 @@
+mixin header()
+    header.header 
+        .header__nav
+            .header__nav-container.container 
+                a(href="index.html").header__logo
+                    img(src="@img/logo.svg", alt="" draggable="false")
+                a(href="index.html").header__logo.sm
+                    img(src="@img/logo-sm.svg", alt="" draggable="false")
+                a(href="index.html").header__logo.mob
+                    img(src="@img/logo-gray.svg", alt="" draggable="false")
+                a(href="#pricelist").btn-out.header__price-btn 
+                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.0834 0H0V20H15.9677V3.91105L12.0834 0ZM2.66129 17.3387V2.66129H10.5645V5.40324H13.3065V17.3387H2.66129Z"/>
+                        <path d="M10.6452 6.69355H5.32258V9.35484H10.6452V6.69355Z"/>
+                        <path d="M10.6452 12.0161H5.32258V14.6774H10.6452V12.0161Z"/>
+                    </svg>
+                    | Прайс-лист
+                .header__right 
+                    .header__tel    
+                        a(href="tel:+74991163079").header__tel-tel +7 (499) 116-30-79
+                        p.header__tel-info ПН - ВС / 08:00 - 21:00
+                    button(type='button' data-target="#tel").header__tel-btn.open-popup.btn-red 
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 15L15 20L0 5L5 0L10 5L7.5 7.5L12.5 12.5L15 10L20 15Z"/>
+                        </svg>
+                        | заказать звонок
+                button.header__button 
+                    span.header__button-line
+        .header__bot 
+            .header__bot-container.container 
+                a(href="#!").header__link Главная 
+                .header__sep
+                a(href="#!").header__link Бетон 
+                .header__sep
+                .header__drop 
+                    a(href="#!").header__link Наша продукция 
+                        <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 2.06869L3.99993 6.15092L-1.7844e-07 2.06869L1.24887 0.84908L3.99993 3.6567L6.75113 0.849079L8 2.06869Z" fill="white"/>
+                        </svg>
+                    .header__drop-wrap 
+                        ul.header__drop-content 
+                            li.header__drop-li 
+                                a(href="#!").header__drop-link Бетон     
+                            li.header__drop-li 
+                                a(href="#!").header__drop-link Насос     
+                            li.header__drop-li 
+                                a(href="#!").header__drop-link Песок     
+                            li.header__drop-li 
+                                a(href="#!").header__drop-link Щебень     
+                            li.header__drop-li 
+                                a(href="#!").header__drop-link ЖБИ
+                .header__sep
+                .header__drop
+                    a(href="#!").header__link Услуги 
+                        <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 2.06869L3.99993 6.15092L-1.7844e-07 2.06869L1.24887 0.84908L3.99993 3.6567L6.75113 0.849079L8 2.06869Z" fill="white"/>
+                        </svg>
+                    .header__drop-wrap 
+                        ul.header__drop-content 
+                            li.header__drop-li 
+                                a(href="#!").header__drop-link Бетон     
+                            li.header__drop-li 
+                                a(href="#!").header__drop-link Насос     
+                            li.header__drop-li 
+                                a(href="#!").header__drop-link Песок     
+                            li.header__drop-li 
+                                a(href="#!").header__drop-link Щебень  
+                            li.header__drop-li 
+                                a(href="#!").header__drop-link ЖБИ
+                .header__sep
+                a(href="#!").header__link Цены 
+                .header__sep
+                a(href="#!").header__link Доставка 
+                .header__sep
+                .header__drop
+                    a(href="#!").header__link О компании 
+                        <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 2.06869L3.99993 6.15092L-1.7844e-07 2.06869L1.24887 0.84908L3.99993 3.6567L6.75113 0.849079L8 2.06869Z" fill="white"/>
+                        </svg>
+                    .header__drop-wrap 
+                        ul.header__drop-content 
+                            li.header__drop-li 
+                                a(href="#!").header__drop-link Бетон     
+                            li.header__drop-li 
+                                a(href="#!").header__drop-link Насос     
+                            li.header__drop-li 
+                                a(href="#!").header__drop-link Песок     
+                            li.header__drop-li 
+                                a(href="#!").header__drop-link Щебень  
+                            li.header__drop-li 
+                                a(href="#!").header__drop-link ЖБИ
+                .header__sep
+                a(href="#!").header__link Контакты 
+        .header__menu 
+            .header__menu-content
+                .header__menu-top
+                    a(href="#!").header__menu-link 
+                        .container 
+                            span Главная 
+                    a(href="#!").header__menu-link 
+                        .container 
+                            span Бетон 
+                    .header__menu-acc.accordion 
+                        .header__menu-acc-btn.accordion__button 
+                            .header__menu-acc-btn-container.container
+                                span Наша продукция
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 1.8294L5.9999 7.95276L-2.6766e-07 1.8294L1.8733 -8.18812e-06L5.9999 4.21143L10.1267 -8.54888e-06L12 1.8294Z"/>
+                                </svg>
+                        ul.header__menu-acc-content.accordion__content.container
+                            li.header__menu-acc-li
+                                a(href="#!").header__menu-acc-link Бетон
+                            li.header__menu-acc-li
+                                a(href="#!").header__menu-acc-link Насос
+                            li.header__menu-acc-li
+                                a(href="#!").header__menu-acc-link Песок
+                            li.header__menu-acc-li
+                                a(href="#!").header__menu-acc-link Щебень
+                            li.header__menu-acc-li
+                                a(href="#!").header__menu-acc-link ЖБИ
+                    .header__menu-acc.accordion 
+                        .header__menu-acc-btn.accordion__button 
+                            .header__menu-acc-btn-container.container
+                                span Услуги
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 1.8294L5.9999 7.95276L-2.6766e-07 1.8294L1.8733 -8.18812e-06L5.9999 4.21143L10.1267 -8.54888e-06L12 1.8294Z"/>
+                                </svg>
+                        ul.header__menu-acc-content.accordion__content.container
+                            li.header__menu-acc-li
+                                a(href="#!").header__menu-acc-link Бетон
+                            li.header__menu-acc-li
+                                a(href="#!").header__menu-acc-link Насос
+                            li.header__menu-acc-li
+                                a(href="#!").header__menu-acc-link Песок
+                            li.header__menu-acc-li
+                                a(href="#!").header__menu-acc-link Щебень
+                            li.header__menu-acc-li
+                                a(href="#!").header__menu-acc-link ЖБИ
+                    a(href="#!").header__menu-link 
+                        .container 
+                            span Цены 
+                    a(href="#!").header__menu-link 
+                        .container 
+                            span Доставка 
+                    .header__menu-acc.accordion 
+                        .header__menu-acc-btn.accordion__button 
+                            .header__menu-acc-btn-container.container
+                                span О компании
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 1.8294L5.9999 7.95276L-2.6766e-07 1.8294L1.8733 -8.18812e-06L5.9999 4.21143L10.1267 -8.54888e-06L12 1.8294Z"/>
+                                </svg>
+                        ul.header__menu-acc-content.accordion__content.container
+                            li.header__menu-acc-li
+                                a(href="#!").header__menu-acc-link Бетон
+                            li.header__menu-acc-li
+                                a(href="#!").header__menu-acc-link Насос
+                            li.header__menu-acc-li
+                                a(href="#!").header__menu-acc-link Песок
+                            li.header__menu-acc-li
+                                a(href="#!").header__menu-acc-link Щебень
+                            li.header__menu-acc-li
+                                a(href="#!").header__menu-acc-link ЖБИ
+                    a(href="#!").header__menu-link 
+                        .container 
+                            span Контакты 
+                .header__menu-bot 
+                    .header__menu-bot-body
+                        a(href="#pricelist").btn-out.header__price-btn 
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.0834 0H0V20H15.9677V3.91105L12.0834 0ZM2.66129 17.3387V2.66129H10.5645V5.40324H13.3065V17.3387H2.66129Z"/>
+                                <path d="M10.6452 6.69355H5.32258V9.35484H10.6452V6.69355Z"/>
+                                <path d="M10.6452 12.0161H5.32258V14.6774H10.6452V12.0161Z"/>
+                            </svg>
+                            | Прайс-лист
+                        .header__tel    
+                            a(href="tel:+74991163079").header__tel-tel +7 (499) 116-30-79
+                            p.header__tel-info ПН - ВС / 08:00 - 21:00
+                        button(type='button' data-target="#tel").header__tel-btn.open-popup.btn-red 
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 15L15 20L0 5L5 0L10 5L7.5 7.5L12.5 12.5L15 10L20 15Z"/>
+                            </svg>
+                            | заказать звонок
