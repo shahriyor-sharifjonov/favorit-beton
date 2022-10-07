@@ -10,8 +10,9 @@ html(lang="en")
         .wrapper 
             include components/header 
             +header 
-            main.main 
-                
+            main.main
+                include components/products 
+                +products  
             include components/footer 
             +footer
         script(src="js/app.min.js") 
