@@ -10,13 +10,21 @@ html(lang="en")
         .wrapper 
             include components/header 
             +header 
-            main.main 
+            main.main
                 include components/intro 
                 +intro 
                 include components/advantages  
                 +advantages  
                 include components/price  
-                +price  
+                +price 
+                include components/rental 
+                +rental 
+                include components/products 
+                +products 
+                include components/clients 
+                +clients 
+                include components/delivery 
+                +delivery  
             include components/footer 
             +footer
         script(src="js/app.min.js") 

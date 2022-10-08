@@ -123,3 +123,35 @@ ul{
         }
     }
 }
+.title{
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #262728;
+    position: relative;
+    @include media(992){
+        font-size: 50px;
+    }
+    @include media(768){
+        font-size: 22px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 4px;
+        background: url(../img/title-line.svg) center / cover no-repeat;
+        bottom: 0;
+        @include media(768){
+            width: 50px;
+            height: 2px;
+            background: url(../img/title-line-md.svg) center / cover no-repeat;
+        }
+    }
+}
+a{
+    text-decoration: none;
+}

@@ -1,1 +1,195 @@
-// Футер
+.footer{
+    background: #0F1E3C;
+    padding: 44px 0;
+    @include media(575){
+        padding-top: 21px;
+        padding-bottom: 30px;
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @include media(768){
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+    &__wrapper{
+        @include media(768){
+            display: none;
+        }
+    }
+    &__subtitle{
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        opacity: 0.5;
+        margin-bottom: 18px;
+    }
+    &__li{
+        &:not(:last-of-type){
+            margin-bottom: 15px;
+            @include media(768){
+                margin-bottom: 10px;
+            }
+        }
+        &::before{
+            display: none;
+        }
+    }
+    &__link{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        @include media(575){
+            font-size: 12px;
+        }
+    }
+    &__div{
+        margin-bottom: 25px;
+        @include media(575){
+            margin-bottom: 15px;
+        }
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        display: block;
+        max-width: 330px;
+        width: 100%;
+        @include media(992){
+            max-width: 170px;
+        }
+        @include media(575){
+            font-size: 12px;
+        }
+    }
+    &__btn{
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #FFFFFF10;
+        border-radius: 3px;
+        padding: 10px 20px;
+        height: 40px;
+        transition: 300ms ease;
+        @include media(575){
+            padding: 7px 15px;
+            height: 30px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        &:hover{
+            background: #FFFFFF20;
+        }
+    }
+    .accordion{
+        width: 100%;
+        display: none;
+        @include media(768){
+            display: block;
+        }
+        &:not(:last-of-type){
+            margin-bottom: 20px;
+        }
+        &__button{
+            position: relative;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            opacity: 0.5;
+            width: 100%;
+            text-align: left;
+            padding-bottom: 3px;
+            border-bottom: 1px solid #ffffff20;
+            &.active{
+                &::before{
+                    transform: translateY(-50%) rotate(-180deg);
+                }
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 5px;
+                background: url(../img/arrow.svg) center / cover no-repeat;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                transition: 300ms ease;
+            }
+        }
+        &__content{
+            display: none;
+            padding-top: 15px;
+            &.active{
+                display: block;
+            }
+        }
+    }
+}
+
+.bottom{
+    background: #0A1937;
+    padding: 20px 0;
+    @include media(768){
+        padding-top: 24px;
+        padding-bottom: 30px;
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        @include media(768){
+            flex-direction: column;
+        }
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        opacity: 0.5;
+        &:nth-of-type(1){
+            @include media(768){
+                margin-bottom: 20px;
+            }
+        }
+        &:nth-of-type(2){
+            @include media(768){
+                margin-bottom: 26px;
+            }
+        }
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        p{
+            margin-bottom: 0 !important;
+        }
+    }
+    &__img{
+        line-height: 0;
+        @include media(768){
+            width: 30px;
+        }
+        img{
+            @include media(768){
+                width: 100%;
+            }
+        }
+    }
+}

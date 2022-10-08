@@ -1,0 +1,96 @@
+.products{
+    background: #F8F9FA;
+    padding-top: 38px;
+    padding-bottom: 60px;
+    @include media(992){
+        padding-top: 31px;
+        padding-bottom: 50px;
+    }
+    @include media(768){
+        padding-bottom: 40px;
+    }
+    &__title{
+        margin-bottom: 40px;
+        @include media(768){
+            margin-bottom: 23px;
+        }
+    }
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        column-gap: 30px;
+        @include media(1200){
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+    }
+    &__card{
+        width: calc(20% - 24px);
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        @include media(1200){
+            width: calc(33.333% - 13.33px);
+        }
+        @include media(768){
+            width: calc(50% - 10px);
+        }
+    }
+    &__img{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    &__content{
+        padding: 10px 23px 20px;
+        @include media(768){
+            padding: 10px 10px 20px 10px;
+        }
+    }
+    &__subtitle{
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #262728;
+        margin-bottom: 2px;
+        @include media(768){
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 150%;
+            margin-bottom: 7px;
+        }
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #262728;
+        word-break: break-word;
+        margin-bottom: 13px;
+        @include media(768){
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            margin-bottom: 15px;
+        }
+    }
+    &__btn{
+        padding: 7px 30px !important;
+        font-weight: 800 !important;
+        font-size: 18px !important;
+        line-height: 150% !important;
+        height: 40px !important;
+        @include media(768){
+            padding: 7px 21px !important;
+            font-size: 12px !important;
+            line-height: 150% !important;
+        }
+    }
+}
