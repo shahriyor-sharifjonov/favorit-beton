@@ -134,9 +134,12 @@ ul{
         font-size: 50px;
     }
     @include media(768){
-        font-size: 22px;
+        font-size: 36px;
         line-height: 150%;
         letter-spacing: 0.02em;
+    }
+    @include media(576){
+        font-size: 22px;
     }
     &::before{
         content: '';

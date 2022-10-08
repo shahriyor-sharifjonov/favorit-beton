@@ -105,3 +105,22 @@ $(document).ready(function() {
         }
     });
 });
+
+if(document.querySelector('.price__tab')){
+  const tabs = document.querySelectorAll('.price__tab');
+  const contents = document.querySelectorAll('.price__content');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      contents.forEach(content => {
+        content.classList.remove('active');
+      })
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      })
+      tab.classList.add('active');
+      const target = tab.getAttribute('data-target');
+      const el = document.querySelector(target);
+      el.classList.add('active')
+    })
+  })
+}
