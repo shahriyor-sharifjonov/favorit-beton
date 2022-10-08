@@ -1913,7 +1913,7 @@ a {
   }
 
   .title {
-    font-size: 22px;
+    font-size: 36px;
     line-height: 150%;
     letter-spacing: 0.02em;
   }
@@ -1963,6 +1963,10 @@ a {
   .advantages__p {
     font-size: 11px;
     line-height: 150%;
+  }
+
+  .title {
+    font-size: 22px;
   }
 }
 
