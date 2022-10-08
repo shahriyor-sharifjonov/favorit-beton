@@ -1,25 +1,16 @@
-.clients{
-    padding-top: 38px;
+.certificates{
+    background: #F8F9FA;
+    padding-top: 39px;
     padding-bottom: 60px;
-    background: #fff;
-    @include media(992){
+    @include media(768){
         padding-top: 32px;
         padding-bottom: 40px;
     }
     &__title{
-        margin-bottom: 40px;
+        margin-bottom: 26px;
         @include media(768){
-            margin-bottom: 20px;
+            margin-bottom: 8px;
         }
-    }
-    &__slider{
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-        padding-left: 15px;
-        padding-right: 15px;
-        width: calc(100% + 30px);
-        margin-left: -15px;
     }
     .swiper{
         width: 100%;
@@ -35,7 +26,7 @@
             max-width: 720px;
         }
         @include media(992){
-            max-width: 520px;
+            max-width: 550px;
         }
         @include media(768){
             max-width: 330px;
@@ -55,11 +46,12 @@
             background: #FFF;
             box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
             border-radius: 3px;
+            padding: 6px 3px;
             @include media(992){
                 box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
             }
             @include media(575){
-                box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 2px 10  px rgba(0, 0, 0, 0.1);
             }
         }
         &-pagination{
@@ -84,22 +76,7 @@
         }
     }
     &__img{
-        width: 100%;
-        pointer-events: none;
         line-height: 0 !important;
-        img{
-            width: 100%;
-        }
-    }
-    &__buttons{
-        position: absolute;
-        width: calc(100% - 30px);
-        display: flex;
-        justify-content: space-between;
-        align-items: stretch;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 15px;
     }
     &__button{
         &-prev{
