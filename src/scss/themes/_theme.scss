@@ -131,7 +131,7 @@ ul{
     color: #262728;
     position: relative;
     @include media(992){
-        font-size: 52px;
+        font-size: 50px;
     }
     @include media(768){
         font-size: 22px;
@@ -151,4 +151,7 @@ ul{
             background: url(../img/title-line-md.svg) center / cover no-repeat;
         }
     }
+}
+a{
+    text-decoration: none;
 }

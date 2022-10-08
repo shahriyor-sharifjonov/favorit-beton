@@ -3,9 +3,39 @@ import $ from 'jquery'
 
 functions.isWebp()
 
-// import Swiper, { Navigation, Pagination } from 'swiper'
+import Swiper, { Autoplay, Navigation, Pagination } from 'swiper'
 
-// const swiper = new Swiper()
+const swiper = new Swiper()
+
+new Swiper(".clients__swiper", {
+  modules: [Navigation, Autoplay, Pagination],
+  slidesPerView: 2,
+  grabCursor: true,
+  spaceBetween: 17,
+  // autoplay:{
+  //     delay: 2000,
+  // },
+  navigation: {
+    nextEl: ".clients__button-next",
+    prevEl: ".clients__button-prev",
+  },
+  pagination: {
+    el: ".clients__pagination",
+  },
+  breakpoints:{
+    1200:{
+      slidesPerView: 6,
+      spaceBetween: 30,
+    },
+    992:{
+      slidesPerView: 4,
+    },
+    768:{
+     slidesPerView: 3,
+     spaceBetween: 20,
+    },
+  }
+});
 
 const headerButton = document.querySelector(".header__button")
 const headerMenu = document.querySelector(".header__menu")

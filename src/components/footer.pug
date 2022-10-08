@@ -1,3 +1,126 @@
 mixin footer()
     footer.footer   
-        p footer
+        .footer__body.container 
+            .footer__wrapper 
+                p.footer__subtitle О компании
+                ul.footer__list 
+                    li.footer__li 
+                        a(href="#!").footer__link Направления деятельности 
+                    li.footer__li 
+                        a(href="#!").footer__link Продукция предприятия 
+                    li.footer__li 
+                        a(href="#!").footer__link Лицензии
+                    li.footer__li 
+                        a(href="#!").footer__link Награды и достижения
+                    li.footer__li 
+                        a(href="#!").footer__link Цель и кредо
+                    li.footer__li 
+                        a(href="#!").footer__link Коллектив
+                    li.footer__li 
+                        a(href="#!").footer__link Завод
+                    li.footer__li 
+                        a(href="#!").footer__link Наши клиенты  
+                    li.footer__li 
+                        a(href="#!").footer__link Отзывы 
+                    li.footer__li 
+                        a(href="#!").footer__link Галерея работ 
+            .footer__wrapper 
+                p.footer__subtitle Наша продукция
+                ul.footer__list 
+                    li.footer__li 
+                        a(href="#!").footer__link Бетон
+                    li.footer__li 
+                        a(href="#!").footer__link Бетон на Гравийном щебне
+                    li.footer__li 
+                        a(href="#!").footer__link Бетон на Гранитном щебне
+                    li.footer__li 
+                        a(href="#!").footer__link Раствор (пескобетон)
+                    li.footer__li 
+                        a(href="#!").footer__link Песок карьерный
+                    li.footer__li 
+                        a(href="#!").footer__link Песок мытый
+                    li.footer__li 
+                        a(href="#!").footer__link Щебень мытый (гравий)
+                    li.footer__li 
+                        a(href="#!").footer__link Щебень (доломит)
+                    li.footer__li 
+                        a(href="#!").footer__link Щебень (вторичный) 
+                    li.footer__li 
+                        a(href="#!").footer__link Аренда автобетононасоса
+            .footer__wrapper 
+                p.footer__subtitle Контакты
+                .footer__div 
+                    a(href="tel::+7(499)113-48-25").footer__p +7 (499) 113-48-25
+                    a(href="tel::+7(499)113-48-25").footer__p +7 (499) 113-48-25
+                .footer__div 
+                    a(href="mailto::favorit-beton@yandex.ru").footer__p favorit-beton@yandex.ru
+                .footer__div 
+                    p.footer__p г. Истра, ул. Панфилова 48, Московская область Работаем круглосуточно 24/7
+                button(type="button" data-target="ask").open-popup.footer__btn Задать вопрос
+            .accordion 
+                button(type="button").accordion__button.active О компании
+                .accordion__content.active
+                    ul.footer__list 
+                        li.footer__li 
+                            a(href="#!").footer__link Направления деятельности 
+                        li.footer__li 
+                            a(href="#!").footer__link Продукция предприятия 
+                        li.footer__li 
+                            a(href="#!").footer__link Лицензии
+                        li.footer__li 
+                            a(href="#!").footer__link Награды и достижения
+                        li.footer__li 
+                            a(href="#!").footer__link Цель и кредо
+                        li.footer__li 
+                            a(href="#!").footer__link Коллектив
+                        li.footer__li 
+                            a(href="#!").footer__link Завод
+                        li.footer__li 
+                            a(href="#!").footer__link Наши клиенты  
+                        li.footer__li 
+                            a(href="#!").footer__link Отзывы 
+                        li.footer__li 
+                            a(href="#!").footer__link Галерея работ
+            .accordion 
+                button(type="button").accordion__button Наша продукция
+                .accordion__content
+                    ul.footer__list 
+                        li.footer__li 
+                            a(href="#!").footer__link Бетон
+                        li.footer__li 
+                            a(href="#!").footer__link Бетон на Гравийном щебне
+                        li.footer__li 
+                            a(href="#!").footer__link Бетон на Гранитном щебне
+                        li.footer__li 
+                            a(href="#!").footer__link Раствор (пескобетон)
+                        li.footer__li 
+                            a(href="#!").footer__link Песок карьерный
+                        li.footer__li 
+                            a(href="#!").footer__link Песок мытый
+                        li.footer__li 
+                            a(href="#!").footer__link Щебень мытый (гравий)
+                        li.footer__li 
+                            a(href="#!").footer__link Щебень (доломит)
+                        li.footer__li 
+                            a(href="#!").footer__link Щебень (вторичный) 
+                        li.footer__li 
+                            a(href="#!").footer__link Аренда автобетононасоса  
+            .accordion 
+                button(type="button").accordion__button Контакты
+                .accordion__content
+                    .footer__div 
+                        a(href="tel::+7(499)113-48-25").footer__p +7 (499) 113-48-25
+                        a(href="tel::+7(499)113-48-25").footer__p +7 (499) 113-48-25
+                    .footer__div 
+                        a(href="mailto::favorit-beton@yandex.ru").footer__p favorit-beton@yandex.ru
+                    .footer__div 
+                        p.footer__p г. Истра, ул. Панфилова 48, Московская область Работаем круглосуточно 24/7
+                    button(type="button" data-target="ask").open-popup.footer__btn Задать вопрос
+    .bottom 
+        .bottom__body.container 
+            p.bottom__p Политика конфиденциальности #[br] Данный сайт не является офертой
+            p.bottom__p ООО «НВ Снабнеруд» #[br] ОГРН 1187746727024 / ИНН 9723059926 
+            .bottom__row 
+                .bottom__img 
+                    img(src="@img/bottom-img.png", alt="")
+                p.bottom__p DIGITAL3X.RU #[br] Делаем сайты для бизнеса
