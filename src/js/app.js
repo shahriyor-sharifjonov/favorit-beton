@@ -21,6 +21,7 @@ new Swiper(".clients__swiper", {
   },
   pagination: {
     el: ".clients__pagination",
+    clickable: true,
   },
   breakpoints:{
     1200:{
@@ -29,6 +30,34 @@ new Swiper(".clients__swiper", {
     },
     992:{
       slidesPerView: 4,
+    },
+    768:{
+     slidesPerView: 3,
+     spaceBetween: 20,
+    },
+  }
+});
+
+new Swiper(".certificates__swiper", {
+  modules: [Navigation, Autoplay, Pagination],
+  slidesPerView: 2,
+  grabCursor: true,
+  spaceBetween: 10,
+  // autoplay:{
+  //     delay: 2000,
+  // },
+  navigation: {
+    nextEl: ".certificates__button-next",
+    prevEl: ".certificates__button-prev",
+  },
+  pagination: {
+    el: ".certificates__pagination",
+    clickable: true,
+  },
+  breakpoints:{
+    1200:{
+      slidesPerView: 4,
+      spaceBetween: 30,
     },
     768:{
      slidesPerView: 3,
