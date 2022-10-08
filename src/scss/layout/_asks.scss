@@ -1,0 +1,106 @@
+.asks{
+    padding: 60px 20px;
+    @include media(768){
+        padding: 40px 20px;
+    }
+    &__body{
+        background: url(../img/asks-bg.svg) center / cover no-repeat;
+        padding: 30px 30px 30px 70px;
+        @include media(768){
+            padding: 40px 20px 20px;
+        }
+    }
+    &__content{
+        border: 2px solid #B80000;
+        padding: 18px 30px 30px 101px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        @include media(1200){
+            padding-left: 80px;
+        }
+        @include media(992){
+            padding: 20px 20px 20px 60px;
+        }
+        @include media(768){
+            padding: 31px 20px 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__circle{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 81px;
+        height: 81px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 0;
+        background: #B80000;
+        border-radius: 50%;
+        @include media(992){
+            width: 50px;
+            height: 50px;
+        }
+        @include media(768){
+            top: 0;
+            left: 50%;
+            width: 40px;
+            height: 40px;
+        }
+        svg{
+            @include media(992){
+                width: 17px;
+            }
+        }
+    }
+    &__title{
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        @include media(1200){
+            font-size: 38px;
+        }
+        @include media(992){
+            font-size: 28px;
+        }
+        @include media(768){
+            font-size: 16px;
+            line-height: 150%;
+            margin-bottom: 13px;
+        }
+    }
+    &__btn{
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(180deg, #B80000 0%, #900000 100%);
+        border-radius: 3px;
+        padding: 16px 72px;
+        transition: 300ms ease;
+        &:hover{
+            color: rgba($color: #fff, $alpha: 0.5);
+        }
+        @include media(992){
+            padding: 10px 30px;
+        }
+        @include media(768){
+            height: 40px;
+            font-size: 14px;
+            line-height: 150%;  
+            padding: 12px 45px;
+        }
+        @include media(575){
+            font-size: 12px;
+        }
+    }
+}

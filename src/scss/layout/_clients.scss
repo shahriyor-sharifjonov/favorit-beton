@@ -1,9 +1,7 @@
 .clients{
     padding-top: 38px;
     padding-bottom: 60px;
-    @include media(768){
-        background: #fff;
-    }
+    background: #fff;
     @include media(992){
         padding-top: 32px;
         padding-bottom: 40px;

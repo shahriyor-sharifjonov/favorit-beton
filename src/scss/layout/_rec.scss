@@ -1,0 +1,55 @@
+.rec{
+    padding-top: 30px;
+    padding-bottom: 43px;
+    background: #F8F9FA;
+    @include media(1200){
+        padding-bottom: 30px;
+    }
+    @include media(768){
+        display: none;
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background: #B80000;
+        width: 100%;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 42px;
+            height: 100%;
+            background: url(../img/rec-figure.png) center / cover no-repeat ;
+            left: -42px;
+        }
+    }
+    &__p{
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #FFCB42;
+        @include media(1200){
+            font-size: 24px;
+        }
+    }
+    &__img{
+        line-height: 0;
+        @include media(992){
+            max-width: 355px;
+            width: 100%;
+        }
+        img{
+            @include media(992){
+                width: 100%;
+            }
+        }
+    }
+
+}

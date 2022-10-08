@@ -1,0 +1,18 @@
+.breadcrumb{    
+    background: #F8F9FA;
+    @include media(768){
+        padding-top: 17px;
+    }
+    &__p{
+        a{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+            color: #9E9FA0;
+            &.active{
+                color: #262728;
+            }
+        }
+    }
+}
