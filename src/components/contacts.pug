@@ -1,9 +1,31 @@
 mixin contacts()
     section.section.contacts 
         .contacts__body.container   
-            h2.contacts__title Контакты
+            h2.contacts__title.title Контакты
             .contacts__content 
                 .contacts__left 
                     p.contacts__subtitle Контакты
                     .contacts__row  
-                        
+                        .contacts__img 
+                            img(src="@img/location.svg", alt="" draggable="false")
+                        p.contacts__p Московская область #[br] г. Истра, ул. Панфилова 48
+                    .contacts__row  
+                        .contacts__img 
+                            img(src="@img/phone.svg", alt="" draggable="false")
+                        .contacts__phones 
+                            a(href="tel::+7(499)113-48-25").contacts__link +7 (499) 113-48-25 #[br] +7 (499) 113-48-25
+                    .contacts__row  
+                        .contacts__img 
+                            img(src="@img/mail.svg", alt="" draggable="false")
+                        .contacts__phones 
+                            a(href="mailto::favorit-beton@yandex.ru").contacts__link favorit-beton@yandex.ru
+                    .contacts__row  
+                        .contacts__img 
+                            img(src="@img/calendar.svg", alt="" draggable="false")
+                        .contacts__phones 
+                            p.contacts__p Работаем круглосуточно 24/7
+                .contacts__map  
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.com/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.com/maps/213/moscow/?feedback=organization%2Fadd&feedback-context=organization.footer&ll=37.495343%2C55.804008&utm_medium=mapframe&utm_source=maps&z=15.69" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.com/map-widget/v1/-/CCUZaUR~lD" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            .contacts__details
+                p.contacts__text Наши реквизиты
+                p.contacts__desc Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия. По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.

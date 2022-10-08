@@ -11,8 +11,14 @@ html(lang="en")
             include components/header 
             +header 
             main.main 
+                include components/rec 
+                +rec
+                include components/breadcrumb 
+                +breadcrumb2 
                 include components/beton 
                 +beton 
+                include components/delivery 
+                +delivery 
             include components/footer 
             +footer
         script(src="js/app.min.js")
