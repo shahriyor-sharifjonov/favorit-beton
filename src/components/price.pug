@@ -1,5 +1,64 @@
+mixin price-row()
+    .price__row 
+        .price__item.b Марка
+        .price__item.b Назв.
+        .price__item.b На грав.
+        .price__item.b На гран.
+
+mixin price-item()
+    .price__row 
+        .price__item М-100
+        .price__item В7,5 П3 F50 W2
+        .price__item 4 410 руб.
+        .price__item 4 410 руб.
+
+
 mixin price()
     .price 
         .price__body.container
             h2.title.price__title Цены на бетон
-                
+            .price__top
+                button(type='button' data-target="#price-1").price__tab.active Бетон
+                button(type='button' data-target="#price-2").price__tab Раствор
+                button(type='button' data-target="#price-3").price__tab Доставка
+            .price__content#price-1.active 
+                +price-row
+                +price-item
+                +price-item
+                +price-item
+                +price-item
+                +price-item
+                +price-item
+                +price-item
+                +price-item
+            .price__content#price-2 
+                +price-row
+                +price-item
+                +price-item
+                +price-item
+                +price-item
+                +price-item
+                +price-item
+            .price__content#price-3
+                +price-row
+                +price-item
+                +price-item
+                +price-item
+                +price-item
+                +price-item
+                +price-item
+                +price-item
+            .price__action 
+                a(href="#!").price__btn 
+                    <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.75 0H0V20H15V6.24875L8.75 0ZM7.44875 7.5V2.5L12.4487 7.5H7.44875Z" fill="white"/>
+                    </svg>
+                    | Скачать прайс-лист 
+                a(href="#!").price__btn 
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 0H11.3793V8.62069H20V0Z" fill="white"/>
+                        <path d="M8.62069 0H0V8.62069H8.62069V0Z" fill="white"/>
+                        <path d="M8.62069 11.3793H0V20H8.62069V11.3793Z" fill="white"/>
+                        <path d="M20 11.3793H11.3793V20H20V11.3793Z" fill="white"/>
+                    </svg>
+                    | Перейти в каталог
