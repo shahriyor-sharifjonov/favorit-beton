@@ -278,6 +278,10 @@
   transition: 300ms ease-out;
 }
 
+.header__link:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .header__link svg {
   -webkit-transition: 300ms ease-out;
   -o-transition: 300ms ease-out;
@@ -2334,6 +2338,94 @@ a {
   text-decoration: none;
 }
 
+.list {
+  background: #fff;
+  padding: 38px 0 60px 0;
+}
+
+.list__content {
+  -webkit-box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.list__title {
+  margin-bottom: 40px;
+}
+
+.list__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #D0D1D2;
+}
+
+.list__row:first-of-type {
+  background: #F3F4F5;
+}
+
+.list__row:first-of-type .list__item {
+  border-bottom: none;
+}
+
+.list__row:last-of-type {
+  border-bottom: 1px solid #D0D1D2;
+}
+
+.list__item {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #262728;
+  text-align: center;
+}
+
+.list__item:not(:last-of-type) {
+  border-bottom: 1px solid #D0D1D2;
+}
+
+.list__item.b {
+  font-weight: 800;
+}
+
+.list__item-1 {
+  width: 14%;
+  border-right: 1px solid #D0D1D2;
+}
+
+.list__item-2 {
+  width: 16%;
+  border-right: 1px solid #D0D1D2;
+}
+
+.list__item-3 {
+  border-right: 1px solid #D0D1D2;
+}
+
+.list__item-3 {
+  width: 35%;
+}
+
+.list__item-4 {
+  width: 35%;
+}
+
+.list__item.l {
+  height: 120px;
+  background: #F3F4F5;
+  border-bottom: none;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -2548,6 +2640,22 @@ a {
 
   .asks__title {
     font-size: 38px;
+  }
+
+  .list__item-1 {
+    width: 20%;
+  }
+
+  .list__item-2 {
+    width: 30%;
+  }
+
+  .list__item-3 {
+    width: 23%;
+  }
+
+  .list__item-4 {
+    width: 28%;
   }
 }
 
@@ -2800,6 +2908,10 @@ a {
 
   .title {
     font-size: 50px;
+  }
+
+  .list__item {
+    font-size: 16px;
   }
 }
 
@@ -3330,6 +3442,10 @@ a {
     height: 2px;
     background: url(../img/title-line-md.svg) center/cover no-repeat;
   }
+
+  .list__title {
+    margin-bottom: 23px;
+  }
 }
 
 @media (max-width: 710px) {
@@ -3449,6 +3565,19 @@ a {
 
   .title {
     font-size: 22px;
+  }
+
+  .list {
+    padding: 30px 0 40px 0;
+  }
+
+  .list__item {
+    font-size: 10px;
+    height: 50px;
+  }
+
+  .list__item.l {
+    height: 100px;
   }
 }
 
