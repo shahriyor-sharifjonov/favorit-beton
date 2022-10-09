@@ -133,10 +133,7 @@ opens.forEach(open => {
     const target = tab.getAttribute('data-target');
     const popup = document.getElementById(target);
     popup.classList.add('active')
-<<<<<<< HEAD
     document.body.classList.add('o-hidden')
-=======
->>>>>>> 1e98e0aab9878bcc54c546a25617709750125377
   })
 })
 
@@ -145,10 +142,7 @@ closs.forEach(close => {
     const popups = document.querySelectorAll('.popup');
     popups.forEach(popup => {
       popup.classList.remove('active')
-<<<<<<< HEAD
       document.body.classList.remove('o-hidden')
-=======
->>>>>>> 1e98e0aab9878bcc54c546a25617709750125377
     })
   })
 })
