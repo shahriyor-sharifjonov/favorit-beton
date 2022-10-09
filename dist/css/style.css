@@ -3887,7 +3887,12 @@ input[type=number] {
 }
 
 @media (max-width: 576px) {
+  .intro__img img {
+    height: 196px;
+  }
+
   .intro__btn {
+    width: 240px;
     margin-left: auto;
     margin-right: auto;
   }

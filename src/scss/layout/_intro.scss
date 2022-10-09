@@ -94,6 +94,9 @@
                 margin-right: auto;
                 display: block;
             }
+            @include media(576){
+                height: 196px;
+            }
         }
     }
     &__row{
@@ -163,6 +166,7 @@
     }
     &__btn{
         @include media(576){
+            width: 240px;
             margin-left: auto;
             margin-right: auto;
         }
