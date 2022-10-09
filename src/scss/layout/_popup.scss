@@ -3,11 +3,15 @@
     z-index: 9999;
     height: 100%;
     width: 100%;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms ease-out;
     &.active{
-        display: flex;
+        opacity: 1;
+        visibility: visible;
     }
     &__close{
         background: rgba(0, 0, 0, 0.5);
