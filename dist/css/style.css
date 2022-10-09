@@ -4325,6 +4325,15 @@ h6 {
     width: 5px;
   }
 
+  quote {
+    font-size: 18px;
+    padding-left: 50px;
+  }
+
+  quote::before {
+    left: 30px;
+  }
+
   .title {
     font-size: 22px;
   }

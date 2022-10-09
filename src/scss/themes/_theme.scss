@@ -237,6 +237,10 @@ quote{
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #262728;
+    @include media(576){
+        font-size: 18px;
+        padding-left: 50px;
+    }
     &::before{
         content: '';
         position: absolute;
@@ -246,6 +250,9 @@ quote{
         width: 2px;
         height: calc(100% - 20px);
         background: #B80000;
+        @include media(576){
+            left: 30px;
+        }
     }
 }
 .title{
