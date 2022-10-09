@@ -164,6 +164,7 @@ ul{
 a{
     text-decoration: none;
 }
+<<<<<<< HEAD
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -171,4 +172,96 @@ input::-webkit-inner-spin-button {
 }
 input[type=number] {
   -moz-appearance: textfield;
+=======
+.list{
+    background: #fff;
+    padding: 38px 0 60px 0;
+    @include media(576){
+        padding: 30px 0 40px 0;
+    }
+    &__content{
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+    }
+    &__title{
+        margin-bottom: 40px;
+        @include media(768){
+            margin-bottom: 23px;
+        }
+    }
+    &__row{
+        display: flex;
+        border-top: 1px solid #D0D1D2;
+        &:first-of-type{
+            background: #F3F4F5;
+            .list__item{
+                border-bottom: none;
+            }
+        }
+        &:last-of-type{
+            border-bottom: 1px solid #D0D1D2;
+        }
+    }
+    &__item{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #262728;
+        text-align: center;
+        @include media(992){
+            font-size: 16px;
+        }
+        @include media(576){
+            font-size: 10px;
+            height: 50px;
+        }
+        &:not(:last-of-type){
+            border-bottom: 1px solid #D0D1D2;
+        }
+        &.b{
+            font-weight: 800;         
+        }
+        &-1{
+            width: 14%;
+            border-right: 1px solid #D0D1D2;
+            @include media(1200){
+                width: 20%;
+            }
+        }
+        &-2{
+            width: 16%;
+            border-right: 1px solid #D0D1D2;
+            @include media(1200){
+                width: 30%;
+            }
+        }
+        &-3{
+            border-right: 1px solid #D0D1D2;
+        }
+        &-3{
+            width: 35%;
+            @include media(1200){
+                width: 23%;
+            }
+        }
+        &-4{
+            width: 35%;
+            @include media(1200){
+                width: 28%;
+            }
+        }
+        &.l{
+            height: 120px;
+            background: #F3F4F5;
+            border-bottom: none;
+            @include media(576){
+                height: 100px;
+            }
+        }
+    }
+>>>>>>> 1e98e0aab9878bcc54c546a25617709750125377
 }

@@ -1,0 +1,66 @@
+.autopark{
+    padding: 38px 0 60px 0;
+    @include media(768){
+        padding: 31px 0 40px 0;
+    }
+    &__title{
+        margin-bottom: 40px;
+        @include media(768){
+            margin-bottom: 23px;
+        }
+    }
+    &__content{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        @include media(576){
+            gap: 10px;
+        }
+    }
+    &__item{
+        position: relative;
+        width: calc(50% - 15px);
+        line-height: 0;
+        @include media(576){
+            width: 100%;
+        }
+        img{
+            line-height: 0;
+            width: 100%;
+        }
+    }
+    &__p{
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;  
+        position: absolute;
+        bottom: 50px;
+        padding-left: 30px;
+        padding-right: 16px;
+        left: 0;
+        width: max-content;
+        height: 60px;
+        background: #B80000;  
+        @include media(992){
+            padding-left: 10px;
+            font-size: 11px;
+            height: 20px;
+            bottom: 20px;
+        } 
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: calc(100% - 0.3px);
+            width: 16px;
+            height: 100%;
+            background: #B80000;
+            clip-path: polygon(0 0, 0 100%, 100% 0);
+            @include media(576){
+                width: 5px;
+            }
+        }       
+    }
+}   

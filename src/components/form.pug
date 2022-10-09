@@ -1,0 +1,11 @@
+mixin form()
+    .form 
+        .form__body.container 
+            .form__item     
+                h2.form__title Ищите цены ниже?
+                p.form__p оставьте заявку сейчас и получите лучшее предложение
+                form(action="#").form__content
+                    input(type="text" placeholder="Ваше Имя").form__input
+                    input(type="text" placeholder="Номер телефона").form__input
+                    button(type="submit").form__btn Получить предложение
+                p.form__sog Нажимая на кнопку «Получить предложение» Я соглашаюсь на обработку персональных данных в соответствии с <a href="#!">политикой конфиденциальности</a>

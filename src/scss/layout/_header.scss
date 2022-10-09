@@ -157,6 +157,9 @@
         text-decoration: none;
         color: #FFFFFF;
         transition: 300ms ease-out;
+        &:hover{
+            color: rgba(#FFF, 0.5);
+        }
         svg{
             transition: 300ms ease-out;
         }
