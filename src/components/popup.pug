@@ -1,0 +1,53 @@
+mixin popup()
+    .popup#tel
+        .popup__close.popup-close 
+        .popup__body
+            .popup__inner 
+                button(type="button").popup-close.popup__button 
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 1.33333L14.6667 1.27157e-06L8 6.66667L1.33333 0L1.27157e-06 1.33333L6.66667 8L0 14.6667L1.33333 16L8 9.33333L14.6667 16L16 14.6667L9.33333 8L16 1.33333Z" fill="#9E9FA0"/>
+                    </svg>
+                h2.popup__title Заказать звонок
+                form(action="#").popup__form
+                    input(type="text" placeholder="Ваше Имя" required).popup__input
+                    input(type="text" placeholder="Телефон" required).popup__input
+                    button(type="submit").popup__btn Отправить
+                p.popup__p Нажимая на кнопку «Получить предложение» Я соглашаюсь на обработку персональных данных в соответствии с #[a(href="#!") политикой конфиденциальности]
+    .popup#calc
+        .popup__close.popup-close 
+        .popup__body
+            .popup__inner 
+                button(type="button").popup-close.popup__button 
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 1.33333L14.6667 1.27157e-06L8 6.66667L1.33333 0L1.27157e-06 1.33333L6.66667 8L0 14.6667L1.33333 16L8 9.33333L14.6667 16L16 14.6667L9.33333 8L16 1.33333Z" fill="#9E9FA0"/>
+                    </svg>
+                h2.popup__title Рассчитать стоимость
+                form(action="#").popup__form
+                    input(type="text" placeholder="Ваше Имя" required).popup__input
+                    input(type="text" placeholder="Телефон" required).popup__input
+                    .popup__row 
+                        select(name="select").popup__select
+                            option(value="0").popup__option М-100  
+                            option(value="0").popup__option М-100  
+                            option(value="0").popup__option М-100  
+                            option(value="0").popup__option М-100
+                        .popup__input 
+                            input(type="number" placeholder="10") 
+                    input(type="text" placeholder="Город, улица, номер дома").popup__input  
+                    button(type="submit").popup__btn Отправить
+                p.popup__p Нажимая на кнопку «Получить предложение» Я соглашаюсь на обработку персональных данных в соответствии с #[a(href="#!") политикой конфиденциальности]
+    .popup#ask 
+        .popup__close.popup-close 
+        .popup__body
+            .popup__inner 
+                button(type="button").popup-close.popup__button 
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 1.33333L14.6667 1.27157e-06L8 6.66667L1.33333 0L1.27157e-06 1.33333L6.66667 8L0 14.6667L1.33333 16L8 9.33333L14.6667 16L16 14.6667L9.33333 8L16 1.33333Z" fill="#9E9FA0"/>
+                    </svg>
+                h2.popup__title Задать вопрос
+                form(action="#").popup__form
+                    input(type="text" placeholder="Ваше Имя" required).popup__input
+                    input(type="text" placeholder="Телефон" required).popup__input
+                    textarea(placeholder="Напишите вопрос...").popup__textarea
+                    button(type="submit").popup__btn Отправить
+                p.popup__p Нажимая на кнопку «Получить предложение» Я соглашаюсь на обработку персональных данных в соответствии с #[a(href="#!") политикой конфиденциальности] 
