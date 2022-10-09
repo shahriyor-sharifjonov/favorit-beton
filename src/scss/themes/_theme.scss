@@ -306,6 +306,10 @@ input[type=number] {
     }
     &__content{
         box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+        @include media(576){
+            width: calc(100% + 40px);
+            margin-left: -20px;
+        }
     }
     &__title{
         margin-bottom: 40px;

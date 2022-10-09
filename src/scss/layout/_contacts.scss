@@ -131,9 +131,15 @@
             margin-top: 0;
             padding: 0 10px 10px;
         }
+        @include media(576){
+            height: 200px;
+        }
         iframe{
             width: 100%;
             border: none;
+            @include media(576){
+                height: 200px;
+            }
         }
     }
     &__details{
