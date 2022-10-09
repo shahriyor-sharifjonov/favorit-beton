@@ -1,0 +1,243 @@
+.popup{
+    position: fixed;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    &.active{
+        display: flex;
+    }
+    &__close{
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &__body{
+        background: #FFFFFF;
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.25);
+        border-radius: 3px;
+        z-index: 1;
+        max-width: 370px;
+        width: 100%;
+        position: relative;
+        padding: 35px 30px 30px;
+        @include media(768){
+            padding: 15px 20px 20px;
+            max-width: 280px;
+        }
+    }
+    &__button{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        @include media(768){
+            width: 12px;
+            height: 12px;
+        }
+        svg{
+            @include media(768){
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &__title{
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #262728;   
+        padding-bottom: 13px;
+        position: relative;
+        margin-bottom: 30px;
+        @include media(768){
+            font-size: 16px;
+            line-height: 150%;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: url(../img/popup-line.svg) center / cover no-repeat;
+            width: 60px;
+            height: 4px;
+            @include media(768){
+                height: 2px;
+                width: 30px;
+            }
+        }     
+    }
+    &__input{
+        margin-bottom: 30px;
+        background: #F8F9FA;
+        border: 1px solid #E4E5E6;
+        border-radius: 3px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 15px 20px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        @include media(768){
+            margin-bottom: 20px;
+            height: 40px;
+            padding: 12px 10px;
+            font-size: 12px;
+            line-height: 150%;
+        }
+        &::placeholder{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+            color: #9E9FA0;
+            @include media(768){
+                font-size: 12px;
+            }
+        }
+    }
+    &__btn{
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(180deg, #B80000 0%, #900000 100%);
+        border-radius: 3px;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 23px;
+        transition: 300ms ease;
+        @include media(768){
+            font-size: 12px;
+            line-height: 150%;
+            height: 40px;
+            margin-bottom: 16px;
+        }
+        &:hover{
+            color: rgba($color: #fff, $alpha: 0.5);
+        }
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #9E9FA0;
+        a{
+            text-decoration: underline;
+            color: #9E9FA0;
+        }
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+        align-items: stretch;
+        margin-bottom: 30px;
+        @include media(768){
+            column-gap: 10px;
+            margin-bottom: 20px;
+        }
+        .popup__input{
+            width: 145px;
+            padding: 0;
+            position: relative;
+            margin-bottom: 0;
+            &::before{
+                content: 'куб.';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 20px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                text-align: right;
+                letter-spacing: 0.02em;
+                color: #262728;
+                @include media(768){
+                    font-size: 12px;
+                }
+            }
+            input{
+                width: 100%;
+                border: none;
+                height: 100%;
+                background: none;
+                padding: 17px 60px 17px 20px;
+                @include media(768){
+                    padding: 11px 45px 11px 20px;
+                }
+            }
+        }
+    }
+    &__select{
+        background: #F8F9FA;
+        border: 1px solid #E4E5E6;
+        border-radius: 3px;
+        height: 60px;
+        width: calc(50% - 10px);
+        padding: 17px 20px 16px; 
+        transition: 300ms ease;
+        @include media(768){
+            height: 40px;
+            padding: 11px 10px;
+            width: calc(50% - 5px);
+        }
+        &:hover{
+            background: #F8F9FA;
+        }
+    }
+    &__textarea{
+        background: #F8F9FA;
+        border: 1px solid #E4E5E6;
+        border-radius: 3px;
+        height: 120px;
+        width: 100%;
+        resize: none;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        margin-bottom: 30px;
+        padding: 10px 20px;
+        @include media(768){
+            margin-bottom: 20px;
+            padding: 13px 10px;
+        }
+        &::placeholder{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+            color: #9E9FA0;
+            @include media(768){
+                font-size: 12px;
+            }
+        }
+    }
+}

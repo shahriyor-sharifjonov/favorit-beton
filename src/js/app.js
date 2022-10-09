@@ -124,3 +124,25 @@ if(document.querySelector('.price__tab')){
     })
   })
 }
+
+const opens = document.querySelectorAll('.open-popup');
+const closs = document.querySelectorAll('.popup-close');
+
+opens.forEach(open => {
+  open.addEventListener('click', () => {
+    const target = tab.getAttribute('data-target');
+    const popup = document.getElementById(target);
+    popup.classList.add('active')
+    document.body.classList.add('o-hidden')
+  })
+})
+
+closs.forEach(close => {
+  close.addEventListener('click', () => {
+    const popups = document.querySelectorAll('.popup');
+    popups.forEach(popup => {
+      popup.classList.remove('active')
+      document.body.classList.remove('o-hidden')
+    })
+  })
+})
