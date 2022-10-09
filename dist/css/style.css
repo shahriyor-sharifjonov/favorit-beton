@@ -1598,7 +1598,7 @@
   transition: 300ms ease-out;
 }
 
-.no-webp .stat {
+.no-webp .stat{
   background-image: url("../img/stat-bg.png"); }
 
 .stat {
@@ -1746,7 +1746,7 @@
           clip-path: polygon(0 0, 0 100%, 100% 0);
 }
 
-.no-webp .form {
+.no-webp .form{
   background-image: url("../img/form-bg.png"); }
 
 .form {
@@ -2646,7 +2646,6 @@ a {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -2655,7 +2654,8 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
-=======
+}
+
 .list {
   background: #fff;
   padding: 38px 0 60px 0;
@@ -2742,7 +2742,6 @@ input[type=number] {
   height: 120px;
   background: #F3F4F5;
   border-bottom: none;
->>>>>>> 1e98e0aab9878bcc54c546a25617709750125377
 }
 
 @media (min-width: 576px) {
@@ -4275,15 +4274,11 @@ input[type=number] {
 
 .webp .intro{ background-image: url(../img/intro-bg.webp); }
 
-<<<<<<< HEAD
+.webp .stat{ background-image: url(../img/stat-bg.webp); }
+
+.webp .form{ background-image: url(../img/form-bg.webp); }
+
 .webp .rec__content::before{ background: url(../img/rec-figure.webp) center/cover no-repeat; }
-=======
-.webp .stat { background-image: url(../img/stat-bg.webp); }
-
-.webp .form { background-image: url(../img/form-bg.webp); }
-
-.webp .rec__content::before { background: url(../img/rec-figure.webp) center/cover no-repeat; }
->>>>>>> 1e98e0aab9878bcc54c546a25617709750125377
 
 @media (max-width: 992px){
 
