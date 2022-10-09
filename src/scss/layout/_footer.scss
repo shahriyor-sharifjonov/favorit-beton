@@ -116,7 +116,7 @@
             border-bottom: 1px solid #ffffff20;
             &.active{
                 &::before{
-                    transform: translateY(-50%) rotate(-180deg);
+                    transform: translateY(-50%) rotate(0);
                 }
             }
             &::before{
@@ -126,7 +126,7 @@
                 height: 5px;
                 background: url(../img/arrow.svg) center / cover no-repeat;
                 top: 50%;
-                transform: translateY(-50%);
+                transform: translateY(-50%) rotate(-180deg);
                 right: 0;
                 transition: 300ms ease;
             }

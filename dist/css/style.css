@@ -634,9 +634,9 @@
 }
 
 .footer .accordion__button.active::before {
-  -webkit-transform: translateY(-50%) rotate(-180deg);
-      -ms-transform: translateY(-50%) rotate(-180deg);
-          transform: translateY(-50%) rotate(-180deg);
+  -webkit-transform: translateY(-50%) rotate(0);
+      -ms-transform: translateY(-50%) rotate(0);
+          transform: translateY(-50%) rotate(0);
 }
 
 .footer .accordion__button::before {
@@ -646,9 +646,9 @@
   height: 5px;
   background: url(../img/arrow.svg) center/cover no-repeat;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-50%) rotate(-180deg);
+      -ms-transform: translateY(-50%) rotate(-180deg);
+          transform: translateY(-50%) rotate(-180deg);
   right: 0;
   -webkit-transition: 300ms ease;
   -o-transition: 300ms ease;
