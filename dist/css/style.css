@@ -235,6 +235,11 @@
 .header__drop-li {
   -webkit-box-shadow: 0px 1px 0px #E4E5E6;
           box-shadow: 0px 1px 0px #E4E5E6;
+  padding-left: 0;
+}
+
+.header__drop-li::before {
+  left: 20px;
 }
 
 .header__drop-link {
@@ -2683,6 +2688,12 @@ ul {
 
 ul li {
   position: relative;
+  padding-left: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #262728;
 }
 
 ul li::before {
@@ -2692,11 +2703,81 @@ ul li::before {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 20px;
+  left: 0px;
   width: 6px;
   height: 6px;
   background: #B80000;
   pointer-events: none;
+}
+
+ol {
+  list-style: none;
+  counter-reset: ccounter;
+}
+
+ol li {
+  counter-increment: ccounter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #262728;
+}
+
+ol li::before {
+  content: counter(ccounter);
+  font-weight: bold;
+  margin-right: 20px;
+  line-height: 1;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #B80000;
+}
+
+.ex-list {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.ex-list.wm {
+  max-width: 900px;
+  width: 100%;
+}
+
+quote {
+  margin: 30px 0;
+  display: block;
+  padding-left: 70px;
+  position: relative;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #262728;
+}
+
+quote::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 50px;
+  width: 2px;
+  height: calc(100% - 20px);
+  background: #B80000;
 }
 
 .title {
@@ -3456,6 +3537,13 @@ h6 {
   .list__item {
     font-size: 16px;
   }
+
+  .txt-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
@@ -4092,6 +4180,10 @@ h6 {
     height: 16px;
   }
 
+  .ex-list {
+    padding: 0 20px;
+  }
+
   .title {
     font-size: 36px;
     line-height: 150%;
@@ -4106,13 +4198,6 @@ h6 {
 
   .list__title {
     margin-bottom: 23px;
-  }
-
-  .txt-row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 
   .txt-h {
