@@ -52,7 +52,6 @@ button{
         text-transform: uppercase;
         color: #262728;
         transition: 300ms ease-out;
- 
         @include media(768){
             height: 40px;
             font-size: 11px;
@@ -65,7 +64,13 @@ button{
             transition: 300ms ease-out;
             fill: #262728;
         }
-        &:hover{
+        &.disabled{
+            color: rgba(#262728, 0.5);
+            svg{
+                fill: rgba(#262728, 0.5);
+            }
+        }
+        &:not(.disabled):hover{
             background: #262728;
             color: #FFFFFF;
             border-color: #262728;
@@ -104,7 +109,56 @@ button{
             fill: #FFFFFF;
             transition: 300ms ease-out;
         }
-        &:hover{
+        &.disabled{
+            color: rgba(#FFF, 0.5);
+            svg{
+                opacity: 0.5;
+            }
+        }
+        &:not(.disabled):hover{
+            color: rgba(#FFF, 0.5);
+            svg{
+                opacity: 0.5;
+            }
+        }
+    }
+    &-gray{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 17px 22px;
+        height: 60px;
+        text-decoration: none;
+        transition: 300ms ease-out;
+        border-radius: 3px;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 150%;
+        background: linear-gradient(180deg, #374664 0%, #0F1E3C 100%);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+        @include media(768){
+            height: 40px;
+            font-size: 11px;
+            line-height: 150%;
+            svg{
+                height: 16px;
+            }
+        }
+        svg{
+            fill: #FFFFFF;
+            transition: 300ms ease-out;
+        }
+        &.disabled{
+            color: rgba(#FFF, 0.5);
+            svg{
+                opacity: 0.5;
+            }
+        }
+        &:not(.disabled):hover{
             color: rgba(#FFF, 0.5);
             svg{
                 opacity: 0.5;
@@ -261,5 +315,157 @@ input[type=number] {
                 height: 100px;
             }
         }
+    }
+}
+
+.exp{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 100px;
+    padding: 0 50px;
+    @include media(576){
+        padding: 0 20px;
+        flex-direction: column;
+    }
+}
+.txt-row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 100px;
+    padding: 0 50px;
+    margin-bottom: 100px;
+    @include media(768){
+        flex-direction: column;
+    }
+    @include media(576){
+        padding: 0 20px;
+    }
+}
+.txt-h{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 450px;
+    @include media(768){
+        min-width: 0;
+    }
+}
+.txt-t{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    @include media(576){
+        gap: 40px;
+    }
+}
+h1{
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #262728;    
+    @include media(576){
+        font-size: 36px;
+    }
+}
+h2{
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #262728;   
+    @include media(576){
+        font-size: 30px;
+    } 
+}
+h3{
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #262728;
+    @include media(576){
+        font-size: 26px;
+    } 
+}
+h4{
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #262728;
+    @include media(576){
+        font-size: 22px;
+    } 
+}
+h5{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #262728;
+}
+h6{
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #262728;    
+}
+.t{
+    &1{
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #262728;  
+        @include media(576){
+            font-size: 22px;
+        }      
+    }
+    &2{
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #262728;   
+        @include media(576){
+            font-size: 20px;
+        }       
+    }
+    &3{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #262728;
+        @include media(576){
+            font-size: 16px;
+        } 
+    }
+    &4{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #262728;        
+    }
+    &5{
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #262728;
+    }
+    &6{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #262728;
     }
 }
