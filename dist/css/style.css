@@ -261,6 +261,13 @@
   color: #262728;
   padding-left: 36px;
   padding-right: 20px;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.header__drop-link:hover {
+  background: #ededed;
 }
 
 .header__link {

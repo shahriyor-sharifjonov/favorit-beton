@@ -146,7 +146,11 @@
             letter-spacing: 0.02em;
             color: #262728;    
             padding-left: 36px;
-            padding-right: 20px;        
+            padding-right: 20px;    
+            transition: 300ms ease-out;
+            &:hover{
+                background: rgb(237, 237, 237);
+            }
         }
     }
     &__link{
