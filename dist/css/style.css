@@ -564,6 +564,10 @@
   margin-bottom: 18px;
 }
 
+.footer__li {
+  padding-left: 0;
+}
+
 .footer__li:not(:last-of-type) {
   margin-bottom: 15px;
 }
