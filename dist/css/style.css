@@ -802,7 +802,7 @@
   font-size: 18px !important;
   line-height: 150% !important;
   padding: 7px 60px !important;
-  height: 40px !important;
+  height: 50px !important;
 }
 
 .products {
@@ -3765,7 +3765,7 @@ h6 {
   }
 
   .intro__body {
-    padding-top: 220px;
+    padding-top: 240px;
   }
 
   .intro__title {
@@ -3778,7 +3778,7 @@ h6 {
   }
 
   .intro__img {
-    height: 220px;
+    height: 240px;
     background-size: 100% auto;
   }
 
@@ -3856,7 +3856,7 @@ h6 {
   }
 
   .price__btn {
-    height: 40px;
+    height: 60px;
     font-size: 11px;
     line-height: 150%;
   }
@@ -3917,7 +3917,7 @@ h6 {
   }
 
   .form__btn {
-    height: 40px;
+    height: 50px;
     font-size: 11px;
     line-height: 150%;
   }
@@ -4036,7 +4036,7 @@ h6 {
   }
 
   .asks__btn {
-    height: 40px;
+    height: 50px;
     font-size: 14px;
     line-height: 150%;
     padding: 12px 45px;
@@ -4151,7 +4151,7 @@ h6 {
   }
 
   .btn-out {
-    height: 40px;
+    height: 50px;
     font-size: 11px;
     line-height: 150%;
   }
@@ -4161,7 +4161,7 @@ h6 {
   }
 
   .btn-red {
-    height: 40px;
+    height: 50px;
     font-size: 11px;
     line-height: 150%;
   }
@@ -4171,7 +4171,7 @@ h6 {
   }
 
   .btn-gray {
-    height: 40px;
+    height: 60px;
     font-size: 11px;
     line-height: 150%;
   }
@@ -4213,11 +4213,11 @@ h6 {
 
 @media (max-width: 576px) {
   .intro__img img {
-    height: 196px;
+    height: 220px;
   }
 
   .intro__btn {
-    width: 240px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }

@@ -25,7 +25,7 @@
             min-height: 0;
         }
         @include media(768){
-            padding-top: 220px;
+            padding-top: 240px;
         }
     }
     &__title{
@@ -80,7 +80,7 @@
             background-size: auto 100%;
         }
         @include media(768){
-            height: 220px;
+            height: 240px;
             background-size: 100% auto;
         }
         @include media(710){
@@ -95,7 +95,7 @@
                 display: block;
             }
             @include media(576){
-                height: 196px;
+                height: 220px;
             }
         }
     }
@@ -166,7 +166,7 @@
     }
     &__btn{
         @include media(576){
-            width: 240px;
+            width: 90%;
             margin-left: auto;
             margin-right: auto;
         }
