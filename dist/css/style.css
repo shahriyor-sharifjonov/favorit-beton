@@ -569,7 +569,7 @@
 }
 
 .footer__li:not(:last-of-type) {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .footer__li::before {
@@ -3603,10 +3603,6 @@ h6 {
 
   .footer__wrapper {
     display: none;
-  }
-
-  .footer__li:not(:last-of-type) {
-    margin-bottom: 10px;
   }
 
   .footer .accordion {
