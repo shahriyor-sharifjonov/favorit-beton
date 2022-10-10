@@ -1935,6 +1935,7 @@
           box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   padding: 21px 30px 30px;
+  overflow: hidden;
   margin-bottom: 30px;
 }
 
@@ -3979,7 +3980,10 @@ h6 {
 
   .contacts__map {
     margin-top: 0;
-    padding: 0 10px 10px;
+  }
+
+  .contacts__map iframe {
+    height: 100%;
   }
 
   .contacts__details {
