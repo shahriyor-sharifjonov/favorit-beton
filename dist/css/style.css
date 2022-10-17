@@ -153,6 +153,10 @@
   gap: 30px;
 }
 
+.header__tel-sm {
+  display: none;
+}
+
 .header__tel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3131,6 +3135,28 @@ h6 {
 
   .header__right {
     display: none;
+  }
+
+  .header__tel-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    margin-right: 10px;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    background: #0f1e3c;
+  }
+
+  .header__tel-sm svg {
+    fill: #fff;
   }
 
   .header__price-btn {
